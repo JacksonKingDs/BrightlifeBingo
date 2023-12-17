@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1042a3b714f90498409c4e051cb157, type: 3}
+  m_Name: 21_Pyramid
+  m_EditorClassIdentifier: 
+  Maps:
+  - {fileID: 2800000, guid: 0ed2dc864d6d6854198e903b67f0a626, type: 3}
+  - {fileID: 2800000, guid: 95c86ed728998a947a8285492fc82bf5, type: 3}
+  - {fileID: 2800000, guid: 6c10c9f444867714c8e8dfff760517ca, type: 3}
+  - {fileID: 2800000, guid: 1a912b060db3b7f40bd3e9eb477cb192, type: 3}
+  PatternName: Pyramid
+  Points: 200
+  MatchFound: 1

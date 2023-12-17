@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1042a3b714f90498409c4e051cb157, type: 3}
+  m_Name: 7_Arrow
+  m_EditorClassIdentifier: 
+  Maps:
+  - {fileID: 2800000, guid: 234434cab4a8bc14ba2292a34188b1a6, type: 3}
+  - {fileID: 2800000, guid: d69bbff4ec02a3a4c8836d05cede0775, type: 3}
+  - {fileID: 2800000, guid: 9891a10f8d8d2d54899126aa73965074, type: 3}
+  - {fileID: 2800000, guid: 2ef7ef233a3c37843985f78910b18426, type: 3}
+  PatternName: Arrow
+  Points: 300
+  MatchFound: 1

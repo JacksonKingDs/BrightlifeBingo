@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1042a3b714f90498409c4e051cb157, type: 3}
+  m_Name: 23_Turtle
+  m_EditorClassIdentifier: 
+  Maps:
+  - {fileID: 2800000, guid: 8421cb845db56b74cbd2f41f28c6affb, type: 3}
+  - {fileID: 2800000, guid: 1a8c274bdb6caed41b5e8c47b280e8ba, type: 3}
+  - {fileID: 2800000, guid: 84e58d69c44f84246aaa482466081dbd, type: 3}
+  - {fileID: 2800000, guid: 73945a9a116ed634b9fb1e4c2491ef93, type: 3}
+  PatternName: Turtle
+  Points: 700
+  MatchFound: 1

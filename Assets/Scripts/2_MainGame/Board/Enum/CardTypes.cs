@@ -1,0 +1,1 @@
+﻿public enum CardLetters { B, I, N, G, O }

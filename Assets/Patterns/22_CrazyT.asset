@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1042a3b714f90498409c4e051cb157, type: 3}
+  m_Name: 22_CrazyT
+  m_EditorClassIdentifier: 
+  Maps:
+  - {fileID: 2800000, guid: e77c82438a552764384c09d88fd78b97, type: 3}
+  - {fileID: 2800000, guid: 4af67c6646c740048af88b350ebd4fe2, type: 3}
+  - {fileID: 2800000, guid: 36253d5b5f0e7bc4695faf1ac98d2289, type: 3}
+  - {fileID: 2800000, guid: 14c5c30cdf4cb904c8a2ade6190bc636, type: 3}
+  PatternName: Crazy T
+  Points: 250

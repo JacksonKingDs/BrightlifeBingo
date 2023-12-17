@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1042a3b714f90498409c4e051cb157, type: 3}
+  m_Name: 6_AirPlane
+  m_EditorClassIdentifier: 
+  Maps:
+  - {fileID: 2800000, guid: 8a3ea8399bcef1a44b664923eba92764, type: 3}
+  - {fileID: 2800000, guid: ffd2af2a459427344b924c3b6086b24a, type: 3}
+  - {fileID: 2800000, guid: 00a322872f37de64cb9ab73a4833f564, type: 3}
+  - {fileID: 2800000, guid: 0f56a3811bb87584aa8ffa52b417cd1d, type: 3}
+  PatternName: Airplane
+  Points: 100
+  MatchFound: 1

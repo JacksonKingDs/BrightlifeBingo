@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a0fb09f6cbc7d4abedaefcfc02269a, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  daubMeterIncrementSpeed: 2
+  numbersToCall: 25
+  OneBoard_B1Position: {x: 0, y: -177.8801, z: 0}
+  oneBoardScale: 0.9542165
+  TwoBoard_B1Position: {x: 0, y: 223.12, z: 0}
+  TwoBoard_B2Position: {x: 0, y: -503, z: 0}
+  twoBoardScale: 0.5878062
+  ThreeBoard_B1Position: {x: -265.64, y: 149.75, z: 0}
+  ThreeBoard_B2Position: {x: 268.86, y: 149.75, z: 0}
+  ThreeBoard_B3Position: {x: 0, y: -497, z: 0}
+  threeBoardScale: 0.4743547
+  FourBoard_B1Position: {x: -265.64, y: 149.75, z: 0}
+  FourBoard_B2Position: {x: 268.86, y: 149.75, z: 0}
+  FourBoard_B3Position: {x: -265.64, y: -497, z: 0}
+  FourBoard_B4Position: {x: 268.86, y: -497, z: 0}
+  fourBoardScale: 0.4743547

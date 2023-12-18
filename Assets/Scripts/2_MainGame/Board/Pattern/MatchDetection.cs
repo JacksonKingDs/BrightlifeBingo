@@ -22,10 +22,16 @@ namespace MainGame
 {
     public class MatchDetection : MonoBehaviour
     {
+        public static MatchDetection Instance;
+
         public Pattern[] Patterns;
 
-        public void init()
+        private GameplayMB gameplay;
+
+        public void Init(GameplayMB gameplay)
         {
+            Instance = this;
+
             if (Patterns == null || Patterns.Length < 1)
             {
                 Debug.LogError("No patterns loaded");
@@ -38,7 +44,7 @@ namespace MainGame
             }
         }
 
-        public void CheckMatch(bool[,] markedBoard)
+        public bool CheckMatch(bool[,] markedBoard)
         {
             foreach (Pattern p in Patterns)
             {
@@ -46,11 +52,12 @@ namespace MainGame
                 {
                     if (p.CheckForMatch(markedBoard))
                     {
-                        GameManager.Instance.IncrementBingoScore();
                         Debug.Log("Bingo! " + p.name);
+                        return true;
                     }
                 }
             }
+            return false;
         }
     }
 }

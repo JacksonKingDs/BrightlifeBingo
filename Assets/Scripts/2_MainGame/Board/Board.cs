@@ -16,24 +16,20 @@
         [SerializeField] 
         private SceneCardsReference cardsReferencer;
 
-        private GameSettings settings;
-
         private Sfx sfx;
 
-        private MatchDetection matchDetection;
+        private GameplayMB gameplayMB;
 
-        public List<int> alreadyAssignedNumbers = new List<int>();
+        private List<int> alreadyAssignedNumbers = new List<int>();
 
         //Status
-        public Card[,] cards;
-        public bool[,] markedPositions;
+        private Card[,] cards;
+        private bool[,] markedPositions;
 
         #region Init
 
         public void Init(GameSettings settings, MatchDetection matchDetection)
         {
-            this.settings = settings;
-            this.matchDetection = matchDetection;
             sfx = Sfx.Instance;
 
             alreadyAssignedNumbers = new List<int>();
@@ -96,11 +92,7 @@
 
         public void BingoCheck()
         {
-            if (matchDetection == false)
-            {
-                matchDetection = GameManager.Instance.MatchDetector;
-            }
-            matchDetection.CheckMatch(markedPositions);
+            gameplayMB.CheckMatch(this.markedPositions);
         }
 
         //public void MatchFound(Pattern pattern, BoardManager board)

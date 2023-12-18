@@ -4,30 +4,30 @@
     using UnityEngine;
     using Settings;
 
-    public class GameSession
+    public class BoardArranger
     {
-        private GameSettings settings;
+        private static GameSettings settings;
 
-        private Board[] board;
+        private static Board[] board;
 
         public List<int> calledNumbers = new List<int>();
 
-        public GameSession(Board[] board, GameSettings settings, MatchDetection matchDetection)
+        public static void Arrange(Board[] boardParam, GameSettings settingsParam, MatchDetection matchDetection)
         {
             //Cache reference
-            this.settings = settings;
-            this.board = board;
+            settings = settingsParam;
+            board = boardParam;
 
             //Setup scene
-            PositionBoards(settings.NumberOfBingoCards);
+            PositionBoards(settingsParam.NumberOfBingoCards);
 
-            for (int i = 0; i < settings.NumberOfBingoCards; i++)
+            for (int i = 0; i < settingsParam.NumberOfBingoCards; i++)
             {
-                board[i].Init(settings, matchDetection);
+                boardParam[i].Init(settingsParam, matchDetection);
             }
         }
 
-        private void PositionBoards(int numberOfBoards)
+        private static void PositionBoards(int numberOfBoards)
         {
             if (numberOfBoards == 1)
             {
@@ -58,7 +58,7 @@
             }
         }
 
-        private void SetBoardTransform(Transform t, Vector3 position, Vector3 scale)
+        private static void SetBoardTransform(Transform t, Vector3 position, Vector3 scale)
         {
             t.localPosition = position;
             t.localScale = scale;

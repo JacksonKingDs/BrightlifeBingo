@@ -1,5 +1,7 @@
 ﻿namespace MainGame.Audio
 {
+    using System.Collections;
+
     using UnityEngine;
 
     [RequireComponent(typeof(AudioSource))]
@@ -7,14 +9,30 @@
     {
         public static Sfx Instance;
 
-        [SerializeField] private AudioSource uiAudioSource;
-        [SerializeField] private AudioSource voiceAudioSource;
+        [Header("Audio Source")]
+        [SerializeField] 
+        private AudioSource uiAudioSource;
+        
+        [SerializeField] 
+        private AudioSource voiceAudioSource;
 
-        [SerializeField] private AudioClip confirmSound;
-        [SerializeField] private AudioClip levelCompleteSound;
-        [SerializeField] private AudioClip areYouReady;
-        [SerializeField] private AudioClip gameStart;
-        [SerializeField] private AudioClip[] bingoFound;
+        [Header("Audio clips")]
+        [SerializeField] 
+        private AudioClip confirmSound;
+        
+        [SerializeField] 
+        private AudioClip levelCompleteSound;
+        
+        [SerializeField] 
+        private AudioClip areYouReady;
+        
+        [SerializeField] 
+        private AudioClip gameStart;
+        
+        [SerializeField] 
+        private AudioClip[] bingoFound;
+
+        private bool bingoAudioQueued = false;
 
         private void Awake()
         {
@@ -30,8 +48,19 @@
         public void Play_UI_Confirm() => UIPlay(confirmSound);
 
         //Gameplay
-        public void Play_BingoFound()
+        public void PlayBingo()
         {
+            if (!bingoAudioQueued)
+            {
+                StartCoroutine(WaitToPlayBingo());
+            }
+        }
+
+        private IEnumerator WaitToPlayBingo()
+        {
+            //Avoid multiple bingos in the same frame triggering multiple sfx.
+            bingoAudioQueued = true;
+            yield return null;
             VoicePlay(bingoFound[Random.Range(0, bingoFound.Length)]);
         }
 

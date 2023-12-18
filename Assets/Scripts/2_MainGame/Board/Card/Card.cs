@@ -3,7 +3,6 @@
     using UnityEngine;
     using TMPro;
     using UnityEngine.UI;
-    using MainGame.StateMachine;
 
     public class Card : MonoBehaviour
     {
